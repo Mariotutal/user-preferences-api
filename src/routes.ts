@@ -1,6 +1,10 @@
 import express, { Request, Response } from "express";
 import cors from "cors";
+import dotenv from "dotenv";
+
 import { getActiveRecords, getAllRecords, getOrdererRecords } from "./utils";
+
+dotenv.config();
 
 const app = express();
 

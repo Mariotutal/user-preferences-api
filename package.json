@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node dist/index.js",
     "build": "npx tsc",
-    "serve": "node dist/index.js",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Mario Vargas",
@@ -22,6 +22,7 @@
   },
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
     "lodash": "^4.17.21"
   }
 }
